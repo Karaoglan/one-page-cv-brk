@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~Software}\\\textbf{Dev~~},
+        \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{~~~~~OOP~~~~~~},
+        \textbf{Functional}\\\textbf{Programming},
+        \textbf{Best}\\\textbf{Practices},
+        \textbf{Test}\\\textbf{~~Automation~~},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+% Programming skill bars
+\programming{{Haskell $\textbullet$ C  $\textbullet$ Angular Framework / 3.5}, {Java $\textbullet$ Sql $\textbullet$ OOP / 4.6}, {Analytical Thinking $\textbullet$ Problem Solving / 5.5}, {Research-Leading $\textbullet$ TeamPlay / 5.6}, {Agile-Scrum $\textbullet$ REST $\textbullet$ Unit Test.-TDD / 5.7}}
+
+% Projects text
+\projects{
+\textbf{LCP} - Loyalty Community Project for airline customers (Java & Angular 4) \\
+        \textbf{Ticketline} - An implementation of the Cinema & Organization Business on Spring Framework \\
+        \textbf{CarTracking} - Real time car tracking system using google api (Java & AngularJS) \\
+        \textbf{MadDiver} - private game project for fun using native android \\
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Burak Karaoglan} % Your name
+\cvjobtitle{ Software Dev. Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/karaoglanburak}
+\cvgithub{karaoglan}
+\cvnumberphone{+90(541) 896 2306} % Phone number
+\cvsite{burakkaraoglan.com} % Personal website
+\cvmail{burakkaraoglan@icloud.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	    {2009 - 2016}
+        {}
+        {BSc., Software \& Information Engineering}
+        {\href{http://www.tuwien.ac.at}{Technical University of Vienna, Austria}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Courses \& Certifications}
+\begin{twenty}
+	\twentyitem
+    	{2016 - 2018}
+		{}
+        {}
+        {}
+        {}
+        {
+        {\begin{itemize}
+        \item German Proficiency Certification by GOETHE Institut - BULATS - C1
+        \item Angular4 Framework
+        \item Amadeus Loyalty Management System
+        \item REST - Principles And Levels
+        \item Agile Scrum Project Management Course
+        \item Unit Testing \& TDD
+
+        \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+\section{Languages}
+\textbf{Turkish}\includegraphics[scale=0.40]{img/5stars.png} \\
+    \textbf{German}\includegraphics[scale=0.40]{img/4stars.png} \\
+    \textbf{English}\includegraphics[scale=0.40]{img/4stars.png} \vspace{2mm}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem
+    	{Dec 2016 -}
+		{Present}
+        {Software Development Engineer}
+        {\href{http://www.amadeus.com/}{AmadeusIT}}
+        {}
+        {\begin{itemize}
+        \item Loyalty Management System for airline industry (Java \& Angular4)
+        \item Created a batch service to transfer customer informations in massive amounts into another applications
+        \item Amadeus provides the technology which keeps the travel sector moving - from initial search to making a booking, from pricing to ticketing, from managing reservations to managing check-in and departure processes.
+        \item Loyalty Management System - Core Modules and Architecture
+            Technologies:
+            - JavaEE
+            - Spring JDBC
+            - AngularJS 2
+            - OracleDS
+            - Rest Architecture
+            - Maven
+        \item Duties:
+            - Designing database models,
+            - Designing rest resources based on swagger yaml 
+            - Finding better and simple solutions on business flows by following SOLID principles and design patterns.
+
+    \end{itemize}}
+        \\
+	\twentyitem
+    	{Jan 2015 -}
+		{Jan 2016}
+        {Full Stack Developer}
+        {\href{http://www.muhamo.com}{Muhamo GmbH.}}
+        {}
+        {
+        {\begin{itemize}
+        \item Realtime Car tracking system and customer management,
+        \item Created a migration service to save current (aprx. 10000) customer information into new system
+        \item Analyzing for better and elegant design solutions
+        \item Company is working with FedEx to transporting goods into Austria, and besides they were also providing chauffeured limousine and rental car services.
+        \item Services:
+        - real time vehicle tracking
+        - registration and login system
+        \item Technologies:
+        - Java
+        - Spring Boot
+        - Rest Architecture
+        - Hibernate
+        - AngularJS
+        - MySQL
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Jan 2013 -}
+		{Jan 2015}
+        {Freelance Java Software Developer }
+        {}
+        {}
+        {
+        {\begin{itemize}
+        \item I was involved and created many javafx projects. Developed some web applications using spring and angular.
+    \end{itemize}}
+        }
+     \\
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
